@@ -1,0 +1,30 @@
+.Cell {
+  height: 100px;
+  width: 100px;
+  border-radius: 1px;
+  background-color: #1d262b;
+  transition: background-color 0.7s ease;
+}
+
+
+.Cell-lit {
+  background-color: #fff;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .Cell {
+    height: 50px;
+    width: 50px;
+    border-radius: 1px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 340px) {
+  .Cell {
+    height: 40px;
+    width: 40px;
+    border-radius: 1px;
+  }
+}

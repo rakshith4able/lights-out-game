@@ -1,0 +1,111 @@
+.Board {
+  margin: 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 10px 10px 0 red; */
+  box-shadow: 0 0 50px #fff, -10px 0 80px rgba(238, 28, 21, 0.493), 10px 0 80px rgba(0, 132, 255, 0.795);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Quicksand:wght@500&display=swap');
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
+}
+
+
+.Board-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ephesis', cursive;
+}
+
+.neon-orange {
+  color: #fb4264;
+  font-size: 80px;
+  text-shadow: 0 0 3vw #f40a35;
+  animation: neon-orange 1s ease infinite;
+  -moz-animation: neon-orange 1s ease infinite;
+  -webkit-animation: neon-orange 1s ease infinite;
+}
+
+.neon-blue {
+  color: #426dfb;
+  font-size: 80px;
+  text-shadow: 0 0 3vw #2356ff;
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+.winner .neon-blue,
+.winner .neon-orange {
+  font-family: 'Quicksand', cursive;
+  font-size: 100px;
+}
+
+@keyframes neon-orange {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #fed128;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+    color: #806914;
+  }
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .winner .neon-blue,
+.winner .neon-orange {
+  font-family: 'Quicksand', cursive;
+  font-size: 70px;
+}
+
+  .neon-orange,.neon-blue{
+    font-size: 60px;
+  }
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 340px) {
+  .winner .neon-blue,
+  .winner .neon-orange {
+    font-family: 'Quicksand', cursive;
+    font-size: 50px;
+  }
+  .neon-orange,.neon-blue{
+    font-size: 40px;
+  }
+
+  
+ 
+}
